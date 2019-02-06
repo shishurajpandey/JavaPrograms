@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myATTApp">
+
+<head>
+	<meta charset="utf-8">
+	<title>AT&amp;T</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="-1">
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
+   
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/icon-devices.css" />
+	<link rel="stylesheet" href="css/icon-misc.css" />
+	<link rel="stylesheet" href="css/digital-design-library.css" />
+	<link rel="stylesheet" href="css/application.css" /> <!-- This css is only for HTML TEAM not DEV TEAM. Don't include. -->
+
+	<script>
+     (function() {
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+           var msViewportStyle = document.createElement("style");
+           msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+           document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+     })();
+   
+   </script>
+   <script src="//0.ecom.attccc.com/styles/att/rwd/1.0.0/js/jquery.min.js"></script>
+   <script src="//0.ecom.attccc.com/styles/att/rwd/1.0.0/js/modernizr.js"></script>   
+
+    <script type="text/javascript" src="angularjs/angular.js"></script>
+    <script type="text/javascript" src="angularjs/angular-route.js"></script>    
+    <script type="text/javascript" src="angularjs/angular-messages.js"></script>    
+    <script type="text/javascript" src="angularjs/angular-touch.js"></script>    
+    <script type="text/javascript" src="angularjs/angular-sanitize.js"></script>    
+    <script type="text/javascript" src="angularjs/angular-css.min.js"></script>    
+
+    <script type="text/javascript" src="js/partials.js"></script>
+    <script type="text/javascript" src="js/digital-design-library.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	
+	<script src="js/angular-pageslide-directive.js"></script> 
+
+	<!-- POD Specific controller js -->
+	<script type="text/javascript" src="js/registrationCtrl.js"></script>
+	<script type="text/javascript" src="js/forgotFlowCtrl.js"></script>
+	<script type="text/javascript" src="js/billCtrl.js"></script>
+	<script type="text/javascript" src="js/PaymentCtrl.js"></script>
+	<script type="text/javascript" src="js/profileCtrl.js"></script>
+    <script type="text/javascript" src="js/lockerCtrl.js"></script>
+    <script type="text/javascript" src="js/mssiCtrl.js"></script>
+    <script type="text/javascript" src="js/suspendrestoreCtrl.js"></script>
+    <script type="text/javascript" src="js/portingCustomersCtrl.js"></script>
+    <script type="text/javascript" src="js/dailyFeeRecommendCtrl.js"></script>
+    <script type="text/javascript" src="js/dailyFeeRecommendCtrl2.js"></script>
+     <script type="text/javascript" src="js/manageIntlFeaturesCtrl.js"></script>
+    <script type="text/javascript" src="js/startDateModalCtrl.js"></script>
+    <script type="text/javascript" src="js/singleNoFeeCtrl.js"></script>
+    <script type="text/javascript" src="js/singleNoFeeCtrl2.js"></script>
+
+    <!--Controls for ASM Drop Down (Desktop & Tablet) and ASM Flyout Menu (Mobile devices)-->
+    <script type="text/javascript" src="js/ASMDropCtrl.js"></script>
+    <script type="text/javascript" src="js/ASMFlyoutCtrl.js"></script>
+    <!--Controls for ASM Drop Down (Desktop & Tablet) and ASM Flyout Menu (Mobile devices)-->
+	
+	<script type="text/javascript"> 
+		var globalNavDefaultSelections = { 
+			"integer_set_primaryTabHighlight": "", 
+			"integer_set_secondaryTabHighlight": "", 
+			"string_set_localeLanguage": "en_US", 
+			"string_set_changePageToSpanishURL": "", 
+			"boolean_set_showPageInSpanishLink": false, 
+			"boolean_set_application_globalsearch_setProductionSearch": false, 
+			"boolean_set_turnOnMotionpoint": true, 
+			"string_set_navService": "//www.att.com", 
+			"string_set_teslaHost": "", 
+			"string_load_module_name": "" 
+		}; 
+      var ge5p_userCity = 'Lemont';
+      var ge5p_userState = 'IL';
+      var ge5p_userZip = '60439';
+   </script>  
+   
+   <!--==== Start TESLA WIDGET REQUIRED CSS & JS dependencies ===================================================-->
+	<script type="text/javascript" src="//0.ecom.attccc.com/globalnav/tesla/2.0/tesla.scaffold.js"></script>
+	<!--==== End TESLA WIDGET REQUIRED CSS & JS dependencies =====================================================-->
+   <noscript>
+   	<link rel="stylesheet" type="text/css" href="http://www.att.com/globalnav/tesla/2.0/themes/tesla.theme.min.css">
+   </noscript>
+   <link rel="stylesheet" type="text/css" href="http://digitaldesign.att.com/styles/att/rwd/1.0.0/css/ds2-legacynav-fix.css">
+</head>
+
+<body>
+   <!--==== Start zone 1 Html for SEO (Global Nav) ================================================================-->
+   <div class="ge5p_global_styles"> 
+      <nav id="ge5p_z1" class="ge5p_z1-navbar" role="navigation"> 
+         <!-- INCLUDE SEO HTML ZONE 1 HERE --> 
+      </nav> 
+   </div>
+   <!--==== End zone 1 Html for SEO ===============================================================================-->
+   <!--==== Start zone 2 Html for SEO (Secondary Nav, User Info, Search) ========================================= -->
+   <div class="ge5p_global_styles"> 
+      <nav id="ge5p_z2" class="container" role="navigation"> 
+         <!-- INCLUDE SEO HTML ZONE 2 HERE --> 
+      </nav> 
+   </div>
+   <!--==== End zone 2 Html for SEO ===============================================================================-->
+   
+   <div data-role="page">
+      <header class="navbar globalNav">
+         <a href="//m.att.com" id="logoHolder">
+            <i class="cssIcon-globe">at&amp;t home</i>
+         </a>
+         <nav>
+            <script type="text/javascript"> 
+               var mobileMenu_ecomName='m.att.com', 
+               mobileMenu_dssName='https://m.att.com', 
+               searchSilo = "shop"; 
+               var g_hideSearch = false;
+            </script>
+         </nav>
+      </header>
+      <!--==== Start Main Content Wrapper ============================================================================-->
+      <div id="wrapper" class="container">
+         <!-- start page content -->
+		<div ng-view></div>
+      </div>
+      <!-- end page content -->
+	</div>   
+   
+   <!--==== Start zone 7 Html for SEO (Footer) ======================================================-->
+   	<div class="ge5p_global_styles">
+      	<div id="ge5p_z7" class="ge5p_z7 container" role="contentinfo"></div>
+      </div>
+   <!--==== End zone 7 Html for SEO =================================================================-->
+        
+   <footer>
+      <div id="footerNav">
+         <div class="ui-block-a row-fluid">
+         	<a href="//www.att.net">ATT.NET</a>
+         </div>
+         <div class="ui-block-b row-fluid">
+         	<a href="//www.att.com/gen/general?pid=11627">BUSINESS</a> 
+         </div>
+         <div class="ui-block-c row-fluid">
+         	<a href="//about.att.com/category/all_news.html">ABOUT AT&amp;T</a>
+         </div>
+      </div>
+      <div id="footerBtm">
+         <ul>
+            <li><a href="//www.att.com/">FULL SITE</a></li>
+            <li><a href="//www.att.com/gen-mobile/privacy-policy?pid=2506">PRIVACY</a></li>
+            <li><a href="//www.att.com/gen-mobile/general?pid=11561">TERMS OF USE</a></li>
+         </ul>
+         <ul>
+            <li><a href="/www.att.com/econtactus/">CONTACT US</a></li>
+            <li><a href="//m.att.com/shopmobile/wireless/legal.html">LEGAL</a></li>
+         </ul>
+         <p><a href="//www.att.com/gen-mobile/privacy-policy?pid=2587">&copy; <span class="copyright">2014</span> AT&amp;T Intellectual Property.</a> All rights reserved. AT&amp;T and Globe logo are registered trademarks of AT&amp;T Intellectual Property.</p>
+      </div>
+   </footer>
+	
+	<script src="//0.ecom.attccc.com/styles/att/assets3.2.0/js/mGlobalnav.js"></script>
+
+</body>
+
+</html>
