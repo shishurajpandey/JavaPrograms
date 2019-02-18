@@ -7,7 +7,7 @@ public class StringManipulations {
 		
 		
 		String s="Hello World, I am Shishu Raj Pandey, I am here to take your Interview, Shishu Raj";
-		String x="Hello";
+		String x="Heelo";
 		
 		System.out.println(s.length());
 		System.out.println(s.substring(1, 5));

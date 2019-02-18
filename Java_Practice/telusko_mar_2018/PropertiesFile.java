@@ -1,8 +1,6 @@
 package telusko_mar_2018;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.util.Properties;
 
 public class PropertiesFile {

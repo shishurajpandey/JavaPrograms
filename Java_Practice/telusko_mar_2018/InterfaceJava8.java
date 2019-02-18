@@ -30,6 +30,7 @@ interface bn{
 // the above interface.
 class Cp implements am,bn{
 	
+	@Override
 	public void sum() {
 System.out.println("Class-C");	
 	}

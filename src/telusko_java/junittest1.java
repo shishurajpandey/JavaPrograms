@@ -1,7 +1,5 @@
 package telusko_java;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class junittest1 {

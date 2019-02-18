@@ -1,9 +1,5 @@
 package interviewQuestions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class FindCommonElementInTwoArray {
 
 	public static void main(String[] args) {

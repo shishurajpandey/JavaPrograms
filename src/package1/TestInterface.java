@@ -13,10 +13,12 @@ interface Interface2{
 
 class Class1 implements Interface1{
 	
+	@Override
 	public void method1(){
 		
 	}
 	
+	@Override
 	public int method2(){
 		return 5;
 			
@@ -30,10 +32,12 @@ public class TestInterface implements Interface1 {
 
 	}
 	
+@Override
 public void method1(){
 		
 	}
 	
+	@Override
 	public int method2(){
 		return 5;
 			

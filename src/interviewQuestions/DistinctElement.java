@@ -20,11 +20,12 @@ public class DistinctElement {
 				
 			}
 			
-			if(isDistinct )
+			if(isDistinct)
 			{   if(i==arr.length-1)
 				System.out.print(arr[i]);
 			else
 				System.out.print(arr[i]+",");
+	
 			}
 	}
 

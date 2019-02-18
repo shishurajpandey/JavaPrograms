@@ -12,6 +12,7 @@ public class CountNoOfCharactersinString {
 		String str="Hello How are you Mr.Shishu Raj";
 		
 		str=str.replaceAll("[\\s.]", "");
+		//str.replace("a", "b");
 		
 		char [] a=str.toCharArray();
 		

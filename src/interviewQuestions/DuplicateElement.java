@@ -21,7 +21,7 @@ public class DuplicateElement {
     		   if(a[i].equals(a[j]))
     		   { 
     			   System.out.println("Duplicate element is : " + a[i]);  }
-    	   }
+    	       }
        }
        
        //Method -2 Using Set

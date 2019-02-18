@@ -33,10 +33,12 @@ public class PolyMorphism {
 	class cd extends mb{
 		
 		///Method overriding
+		@Override
 		public void sum(int a, int b) {
 			System.out.println(a*b);
 		}
-        public void sum(int a, int b, int c) {
+        @Override
+		public void sum(int a, int b, int c) {
 			System.out.println(a+b*c);
 		}
 	
