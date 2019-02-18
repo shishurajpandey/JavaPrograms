@@ -11,6 +11,7 @@ class Equal{
 		return num;
 	}
 	
+	@Override
 	public boolean equals(Object o){
 		
 		if((o instanceof Equal) && (((Equal)o).getNum() == this.num)){
@@ -20,6 +21,7 @@ class Equal{
 		}
     }
 	
+	@Override
 	public String toString(){
 		
 		return String.valueOf(num);

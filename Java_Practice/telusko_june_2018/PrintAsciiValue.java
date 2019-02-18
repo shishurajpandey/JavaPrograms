@@ -1,7 +1,5 @@
 package telusko_june_2018;
 
-import java.util.Scanner;
-
 public class PrintAsciiValue {
 
 	public static void main(String[] args) {

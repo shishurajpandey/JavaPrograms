@@ -42,6 +42,7 @@ class Ab{
 class cd extends Ab{
 	
 	//Method Overriding, When you overide the method present in Base class to child class. That means class having the same name and same no of parameter.
+	@Override
 	public void sum()
 	{
 		System.out.println(x*y);

@@ -1,6 +1,5 @@
 package package1;
 
-import package1.TestDeffault2;
 import package1.TestPublic1;
 
 public class TestDefaultClass extends TestPublic1 {

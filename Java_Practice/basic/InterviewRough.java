@@ -1,7 +1,5 @@
 package basic;
 
-import interviewQuestions.BubbleSort;
-
 public class InterviewRough {
 
 	public static void main(String[] args) {
