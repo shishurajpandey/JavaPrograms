@@ -1,0 +1,17 @@
+
+EMP Table-
+Name     Salary
+---------------
+abc     100000
+bcd     1000000
+efg     40000
+ghi     500000
+
+
+Find the second highest salary-
+
+select max(Salary), Name from emp where salary<(select max(salary) from emp)
+
+Third largest salary
+
+select max(Salary), Name from emp where salary< (select max(salary) from emp where salary<(select max(salary) from emp where salary))

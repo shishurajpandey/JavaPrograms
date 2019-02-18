@@ -25,7 +25,6 @@ public class DistinctElement {
 				System.out.print(arr[i]);
 			else
 				System.out.print(arr[i]+",");
-	
 			}
 	}
 

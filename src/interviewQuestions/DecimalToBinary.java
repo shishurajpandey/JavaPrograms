@@ -11,8 +11,7 @@ public class DecimalToBinary {
 		int [] bin=new int[1000];
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		
-		
+	
 		int i=0;
 		while(n>0)
 			

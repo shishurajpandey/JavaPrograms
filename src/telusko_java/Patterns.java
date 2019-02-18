@@ -8,7 +8,7 @@ public class Patterns {
 	{
     	for(int j=0;j<5;j++)
 		
-				{System.out.printf("*");
+				{System.out.print("*");
 		        }
     	System.out.println();
 	}
